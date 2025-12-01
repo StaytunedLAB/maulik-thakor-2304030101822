@@ -1,4 +1,4 @@
-/ Method examples
+// Method examples
 
 let user = {
     name: "Jhon doe",
