@@ -58,5 +58,18 @@ else
     console.log(year + " is Not a Leap Year");
 
 
+// Q5. Check Palindrome String*
+
+javascript
+let str = prompt("Enter a string:");
+let rev = str.split("").reverse().join("");
+
+if (str === rev)
+    console.log("Palindrome String");
+else
+    console.log("Not a Palindrome String");
+
+
+
 
 
