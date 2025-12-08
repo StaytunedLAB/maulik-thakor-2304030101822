@@ -10,3 +10,22 @@ let CI = p * (Math.pow((1 + r / 100), t)) - p;
 
 console.log("Simple Interest = " + SI);
 console.log("Compound Interest = " + CI);
+
+
+// Q2. Fibonacci Series*
+
+javascript
+let n = parseInt(prompt("Enter number of terms: "));
+let a = 0, b = 1;
+
+console.log("Fibonacci Series:");
+console.log(a);
+console.log(b);
+
+for (let i = 2; i < n; i++) {
+    let c = a + b;
+    console.log(c);
+    a = b;
+    b = c;
+}
+
