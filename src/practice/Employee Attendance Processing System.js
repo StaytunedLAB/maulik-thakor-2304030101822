@@ -1,7 +1,6 @@
-/************************************************************
- * Employee Attendance Processing System
- ************************************************************/
 
+//  Employee Attendance Processing System
+ 
 function processAttendance(attendanceData) {
     // Prevent modifying original input
     const input = JSON.parse(JSON.stringify(attendanceData));
@@ -119,9 +118,9 @@ function processAttendance(attendanceData) {
     };
 }
 
-/************************************************************
- * Example Test
- ************************************************************/
+
+//  Example Test
+
 
 const exampleInput = {
     employeeId: "EMP-1022",
