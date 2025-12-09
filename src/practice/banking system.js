@@ -1,12 +1,4 @@
-/************************************************************
- * Banking System – Transaction & Balance Validator
- * Fully meets all requirements:
- * - Safe parsing
- * - Reject invalid transactions
- * - Never mutates input
- * - try/catch/finally for processing
- ************************************************************/
-
+/* Banking System – Transaction & Balance Validator*/
 function processBankAccount(accountData) {
     // Prevent modification of original input
     const input = JSON.parse(JSON.stringify(accountData));
@@ -126,9 +118,8 @@ function processBankAccount(accountData) {
     };
 }
 
-/************************************************************
- * Example Usage
- ************************************************************/
+
+//   Example Usage
 
 const sampleInput = {
     accountNumber: "ACC-9988",
@@ -138,12 +129,12 @@ const sampleInput = {
     transactions: [
         { type: "Deposit", amount: 200 },
         { type: "Withdraw", amount: 100 },
-        { type: "Withdraw", amount: 5000 },       // Insufficient funds
-        { type: "Deposit", amount: -20 },         // Invalid
-        { type: "abc", amount: 30 },              // Invalid type
-        { type: "Withdraw", amount: "xyz" },      // Invalid number
-        { amount: 50 },                           // Missing type
-        null                                      // Corrupted entry
+        { type: "Withdraw", amount: 5000 },       
+        { type: "Deposit", amount: -20 },         
+        { type: "abc", amount: 30 },              
+        { type: "Withdraw", amount: "xyz" },      
+        { amount: 50 },                           
+        null                                      
     ]
 };
 
