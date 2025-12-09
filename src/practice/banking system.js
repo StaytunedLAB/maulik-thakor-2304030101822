@@ -1,4 +1,5 @@
 /* Banking System – Transaction & Balance Validator*/
+
 function processBankAccount(accountData) {
     // Prevent modification of original input
     const input = JSON.parse(JSON.stringify(accountData));
